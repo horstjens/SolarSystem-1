@@ -9,10 +9,13 @@ import numpy as np
 
 def create_layout():
     return [
-        [sg.Text('N-body data viewer', size=(30, 1)),
-         sg.InputText("Planeten-Nummer", key="time", size=(8,1)),
-         sg.Ok(),
-         sg.Cancel()]
+        [sg.Text('N-body data viewer', size=(30, 1))],
+         [sg.Text("body nr"), sg.InputText("7", size=(3,1), key="bodynr")],
+         [sg.Text("lines"), sg.InputText("1000", size=(3,1), key="lines")],
+         [sg.Text("x"), sg.InputText("x", size=(3,1), key="lines")],
+         [sg.Text("y"), sg.InputText("y", size=(3,1), key="lines")],
+         [sg.Text("z"), sg.InputText("z", size=(3,1), key="lines")],
+         [sg.Ok(),sg.Cancel()],
         ]
 
 layout = create_layout()
